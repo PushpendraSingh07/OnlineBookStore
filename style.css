@@ -59,7 +59,7 @@
 }
 
 header{
-    background: #e7f0f3ac;
+    background: #ffffff;
     width: 100%;
     height: 100vh;
 }
@@ -107,8 +107,8 @@ header{
 }
 
 .main-header img{
-    width: 560px;
-    height: auto;
+    width: 500px;
+    height: 400px;
 }
 
 /*--- categories ---*/
@@ -147,7 +147,7 @@ section{
 }
 
 .cat-books .books .book-img{
-    background-color: #e7f0f3ac;
+    background-color: #ffffff;
     padding: 18px;
     border-radius: 50%;
     width: 100px;
@@ -200,7 +200,7 @@ section{
 }
 
 #about{
-    background: #e7f0f3ac;
+    background: #ffffff;
     width: 100%;
     padding: 80px 0px;
     display: grid;
@@ -244,60 +244,72 @@ section{
 
 /*-----blog section - css ---*/
 
-.blog-header{
+.blog-header {
     text-align: center;
     font-size: 35px;
     padding: 40px 0;
 }
 
-.set-row .col{
-    padding-top: 20px;
-    width: 480px;
+.set-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust gap between columns as needed */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.set-row .col {
+    flex: 1; /* Ensure columns take equal space */
+    padding: 20px;
     position: relative;
+    text-align: center; /* Center-align content */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    min-width: 300px; /* Ensure there's a minimum width */
 }
 
-.set-row .col img{
+.set-row .col img {
     width: 100%;
+    height: auto;
 }
 
-.set-row .col  h4{
+.set-row .col h4 {
     font-size: 24px;
     padding: 12px 0;
     margin-top: 14px;
 }
 
-.set-row .col  p{
+.set-row .col p {
     font-size: 18px;
     padding-bottom: 12px;
 }
 
-.set-row .col a{
+.set-row .col a {
     font-size: 20px;
     color: #000;
+    text-decoration: none; /* Remove underline */
 }
 
-.set-row .col a:hover{
+.set-row .col a:hover {
     color: #0b910b;
 }
 
-.set-row .col .dates{
+.set-row .col .dates {
     position: absolute;
-    top: 65%;
-    left: 5%;
-}
-
-.set-row .col .dates span{
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background: #072019;
     color: #ffffff;
     padding: 12px 20px;
     font-size: 20px;
     border-radius: 50px;
+    margin-top: -20px; /* Adjust as necessary */
 }
+
 
 /*----- contact section --------*/
 
 #contactus{
-    background: #e7f0f3ac;
+    background: #ffffff;
     width: 100%;
     padding: 80px 0;
     display: grid;
@@ -331,7 +343,7 @@ section{
     padding: 6px 0;
     text-indent: 10px;
     font-size: 18px;
-    background-color: #e7f0f3ac;
+    background-color: #ffffff;
 }
 
 .contact-row form input::placeholder,
@@ -375,7 +387,7 @@ textarea::placeholder{
 }
 
 #shipment {
-    background: #e7f0f3ac;
+    background: #ffffff;
     width: 100%;
     padding: 80px 0;
 }
@@ -411,7 +423,7 @@ textarea::placeholder{
     padding: 6px 0;
     text-indent: 10px;
     font-size: 18px;
-    background-color: #e7f0f3ac;
+    background-color: #ffffff;
 }
 
 .shipment-form form input::placeholder {
@@ -633,3 +645,47 @@ textarea::placeholder{
         width: 280px;
     }
 }
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-content {
+    max-width: 500px;
+    margin: auto;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #0b910b;
+}
+
